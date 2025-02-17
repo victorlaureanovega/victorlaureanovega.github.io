@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Actividad CSS + HMTL</title>
+        <style>
+            body {
+                margin: 30%;
+            }
+
+            h1 {
+                background-color: blueviolet;
+            }
+
+            h2 {
+                background-color: aquamarine;
+                padding: 200% 0;
+            }
+
+            #uno h3 {
+                color: palevioletred;
+            }
+
+            #uno p {
+                font-size: 10px;
+            }
+
+            #dos {
+                background-color: black;
+            }
+
+            #dos h3 {
+                color: yellow;
+            }
+
+            #dos p {
+                color: white;
+            }
+
+            #tres li {
+                text-align: right;
+            }
+
+            #cuatro ol {
+                display: flex;
+                gap: 19px;
+                flex-direction: row-reverse;
+                justify-content: center;
+            }
+
+            #cinco table {
+                background-color: blue;
+            }
+
+            #c-uno {
+                padding: 0 70%;
+            }
+
+            #c-dos h3 {
+                text-shadow: 300px 300px 10px red;
+            }
+
+            #c-dos p {
+                color: #ea6;
+            }
+
+            #c-dos {
+                background-color: turquoise;
+                margin: 20%;
+            }
+
+            #c-tres h3 {
+                font-size: 4%;
+            }
+
+            #c-tres p {
+                font-size: 160%;
+            }
+
+            #c-cuatro p {
+                text-align: center;
+                padding: 30%
+            }
+
+            #c-cinco {
+                background-color: yellow;
+                font-size: 400%;
+            }
+
+            #c-seis {
+                background-color: yellow;
+            }
+
+            #c-seis h3 {
+                font-weight: normal;
+                font-size: 16px;
+            }
+
+            .caja {
+                width: 700%;
+                padding: 2%;
+                border: 5px solid black;
+                margin: 30px;
+                background-color: lightblue;
+            }
+
+            #wikileaks {
+                padding: 700% 0;
+            }
+            #wikileaks p {
+                color: red;
+                font-weight: 900;
+                font-size: 900%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            Preguntas
+        </h1>
+
+        <h2>
+            HTML
+        </h2>
+
+        <div id="uno">
+            <h3>
+                ¿Qué es HTML? (Explicar las etiquetas head y body)
+            </h3>
+            <p>
+                HTML es un lenguaje de programación que se utiliza para estructurar páginas web. La etiqueta 'head' almacena la información que no se muestra en el navegador, pero que es muy importante que este conozca. En ella puede dársele un título a la página, o enlazar el HTML con un CSS. En la etiqueta body es donde se encuentran los elementos principales de la página que el usuario podrá ver, tales como imágenes, texto, enlace a otras páginas, videos, etc.
+            </p>
+        </div>
+
+        <div id="dos">
+            <h3>
+                Explicar las etiquetas section, article, aside, header y footer
+            </h3>
+            <p>La etiqueta header representa el encabezado de la página o de una sección (con algún logo, menú, título, etc.), mientras que footer contiene la información al pie de la página o de una sección (referencias adicionales). section sirve para agrupar elementos que tienen similitudes temáticas, article es para contenido independiente como publicaciones o comentarios, y aside es para información adicional, como la de las barras laterales.</p>
+        </div>
+
+        <div id="tres">
+            <h3>
+                <ul>
+                    <li>Crear</li>
+                    <li>una</li>
+                    <li>lista</li>
+                    <li>desordenada</li>
+                </ul>
+            </h3>
+        </div>
+
+        <div id="cuatro">
+            <h3>
+                <ol>
+                    <li>ordenada</li>
+                    <li>lista</li>
+                    <li>una</li>
+                    <li>Crear</li>
+                </ol>
+            </h3>
+        </div>
+
+        <div id="cinco">
+            <h3>
+                Crear una tabla básica
+            </h3>
+            <table>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                </tr>
+                <tr>
+                    <td>Ana</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>Carlos</td>
+                    <td>30</td>
+                </tr>
+            </table>
+        </div>
+        
+
+        <h2>
+            CSS
+        </h2>
+
+        <div id="c-uno">
+            <h3>
+                ¿Qué es CSS y cuál es su propósito?
+            </h3>
+            <p>
+                CSS es un lenguaje de programación utilizado para personalizar los elementos de un documento escrito en un lenguaje de marcado, como un HTML o un XML, es decir, para hacer el contenido legible, resaltar algunas cosas por encima de otras y contribuir estéticamente al diseño.
+            </p>
+        </div>
+
+        <div id="c-dos">
+            <h3>
+                Tres formas de incluir estilos en un HTML
+            </h3>
+            <p>
+                link rel="stylesheet" href="archivo.css" en el header
+            </p>
+            <p>
+                Etiqueta style también en el header
+            </p>
+            <p>
+                En la misma línea: p style="color: blue; font-size: 18px;">Texto con estilo en línea /p
+            </p>
+        </div>
+
+        <div id="c-tres">
+            <h3>
+                ¿Qué es un selector? ¿Qué es una Regla CSS?
+            </h3>
+            <p>
+                Un selector es una palabra que hace referencia a una etiqueta o a un elemento del HTML, y sirve para indicar al CSS qué se aplicará a qué elemento. Una Regla CSS es el conjunto de líneas de código que aplican a un selector.
+            </p>
+        </div>
+
+        <div id="c-cuatro">
+            <h3>
+                Explicar Tag Selector, Class Selector, Tag and Class Selector y Id Selector
+            </h3>
+            <p>
+                Tag sirve para seleccionar todos los elementos de un tipo específico, y hace referencia a etiquetas HTML (p {}, h1 {}, h3 {}). Class es para clases creadas por el usuario, y se define con un punto antes del nombre (.clase {}, por ejemplo). Tag and Class aplica a tipos específicos de una clase, y se denota: p.clase {}. Id se utiliza en elementos a los se atribuyó determinado identificador en el HTML: #id {}.
+            </p>
+        </div>
+
+        <div id="c-cinco">
+            <h3>
+                ¿Qué es una clase? ¿Qué es un id? ¿Cómo se relacionan a CSS?
+            </h3>
+            <p>
+                Una clase es un nombre que se le da a algunos elementos que comparten varias características en común, tanto como para decir que son esencialmente iguales. Un id es sólo un identificador único que se le da a los elementos que por alguna razón necesitan destacarse.
+            </p>
+            <p>
+                Una clase es un nombre que se le da a algunos elementos que comparten varias características en común, tanto como para decir que son esencialmente iguales. Un id es sólo un identificador único que se le da a los elementos que por alguna razón necesitan destacarse.
+            </p>
+            <p>
+                Una clase es un nombre que se le da a algunos elementos que comparten varias características en común, tanto como para decir que son esencialmente iguales. Un id es sólo un identificador único que se le da a los elementos que por alguna razón necesitan destacarse.
+            </p>
+            <p>
+                Una clase es un nombre que se le da a algunos elementos que comparten varias características en común, tanto como para decir que son esencialmente iguales. Un id es sólo un identificador único que se le da a los elementos que por alguna razón necesitan destacarse.
+            </p>
+            <p>
+                Una clase es un nombre que se le da a algunos elementos que comparten varias características en común, tanto como para decir que son esencialmente iguales. Un id es sólo un identificador único que se le da a los elementos que por alguna razón necesitan destacarse.
+            </p>
+            <p>
+                Una clase es un nombre que se le da a algunos elementos que comparten varias características en común, tanto como para decir que son esencialmente iguales. Un id es sólo un identificador único que se le da a los elementos que por alguna razón necesitan destacarse.
+            </p>
+            <p>
+                Una clase es un nombre que se le da a algunos elementos que comparten varias características en común, tanto como para decir que son esencialmente iguales. Un id es sólo un identificador único que se le da a los elementos que por alguna razón necesitan destacarse.
+            </p>
+            <p>
+                Una clase es un nombre que se le da a algunos elementos que comparten varias características en común, tanto como para decir que son esencialmente iguales. Un id es sólo un identificador único que se le da a los elementos que por alguna razón necesitan destacarse.
+            </p>
+            <p>
+                Una clase es un nombre que se le da a algunos elementos que comparten varias características en común, tanto como para decir que son esencialmente iguales. Un id es sólo un identificador único que se le da a los elementos que por alguna razón necesitan destacarse.
+            </p>
+        </div>
+
+        <div id="c-seis">
+            <p>
+                Explicar el modelo de caja de CSS con un ejemplo
+            </p>
+            <h3>
+                Este modelo representa la forma en que se estructura el contenido de los elementos contenidos en el body de un HTML. Nos ayuda a comprender cuánto espacio ocupa cada elemento, y propone cuatro partes: content (el contenido en sí, ya sea un texto o una imagen), padding (el espacio entre el contenido y el borde de la caja), border (contorno de la caja) y margin espacio entre la caja y otros elementos.
+            </h3>
+            <div class="caja">
+                <p>Caja</p>
+            </div>
+        </div>
+
+        <div id="c-siete">
+            <p>
+                ¿Cómo se puede cambiar el color de la letra con CSS?
+            </p>
+            <h3>
+                Se puede escribir una instrucción parecida a la siguiente, ya sea utilizando colores "naturales" (es decir, escribiendo el nombre, i.e.: red, blue, violet, pink), utilizando valores hexadecimales, RGB, RGBA o HSL:
+                p {
+                    color: #45e;
+                }
+            </h3>
+        </div>
+
+        <div id="wikileaks">
+            <p>
+                Nueva página de Wikileaks: <a href="index.html">Wikileaks</a>
+            </p>
+        </div>
+    </body>
+</html>
