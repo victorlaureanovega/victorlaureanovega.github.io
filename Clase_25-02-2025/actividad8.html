@@ -15,6 +15,23 @@
             Esta API nos permite obtener información general sobre la mayoría de los países del mundo, por ejemplo:
         </p>
         <div id="datos" class="grid-container"></div>
+
+        <div id="tutorial">
+            <h3>
+                ¿Cómo utilizar esta API?: Un breve tutorial
+            </h3>
+            <ol>
+                <li>
+                    Tras haber escogido un país, el usuario debe programar una función en JavaScript que, con el método fetch, busque información en el enlace https://restcountries.com/v3.1/name/{NOMBRE-DEL-PAIS}, mismo que deberá ser convertido a formato JSON. Tras esto, deberá mantener el primer resultado de aquello que le regresa la API; es decir, si la variable donde almacenó la respuesta en formato JSON es datos, deberá conservar datos[0].
+                </li>
+                <li>
+                    Una vez recogida esta información, el usuario puede comenzar a almacenarla en partes en distinta variables. La respuesta de la API incluirá, principalmente, los atributos name.common, capital, flags.png, population, languages. Los dos últimos deben convertirse a string si desean manejarse con mayor comodidad.
+                </li>
+                <li>
+                    En el mismo código de JavaScript se deberá codificar un apartado donde la información obtenida y ya guardada en variables se agregué al archivo HTML, donde los demás podrán verla. Para esto es importante que el HTML contenga una sección ya pensada para esto. De más está agregar que, para que la información sea buscada y desplegada, la función principal (es decir, la de buscar datos) deberá llamarse en algún lugar del código.
+                </li>
+            </ol>
+        </div>
     </body>
 
     <script>
