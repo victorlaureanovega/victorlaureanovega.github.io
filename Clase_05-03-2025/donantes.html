@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Escuelas</title>
+</head>
+<body>
+    <h1>Lista de donantes</h1>
+   
+    <a href="/">Bienvenida</a>
+    <a href="/escuelas">Escuelas</a>
+
+    <script>
+        async function obtenerDonantes() {
+            //Agregar el url adecuado
+            const respuesta = await fetch("/api/donantes");
+            const donantes = await respuesta.json();
+
+            // Crear una lista para mostrar los datos
+            let ul = document.createElement("ul");
+
+            donantes.forEach(donante => {
+                let li = document.createElement("li");
+                li.textContent = `${donante.nombre}: ${donante.donativos}`;
+                ul.appendChild(li);
+            });
+
+            document.body.appendChild(ul);
+        }
+        obtenerDonantes();
+    </script>
+</body>
+</html>
