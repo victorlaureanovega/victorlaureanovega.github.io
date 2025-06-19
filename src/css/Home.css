@@ -64,12 +64,6 @@ iframe {
   border-radius: 8px;
 }
 
-.blog {
-  width: 75%;
-  height: 600px;
-  border-radius: 10px;
-}
-
 .modal-overlay-archivo {
   position: fixed;
   top: 0;
@@ -147,5 +141,16 @@ button:hover {
   }
   to {
     transform: translateX(0%);
+  }
+}
+
+@media (max-width: 480px) {
+  .corto {
+    width: 100%;
+    height: 300px;
+  }
+
+  .modal-overlay-archivo {
+    width: 60vw;
   }
 }
