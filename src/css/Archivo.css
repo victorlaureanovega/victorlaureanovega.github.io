@@ -1,5 +1,52 @@
+.archivo-main {
+    background-color: #111;
+    color: #EEE;
+    font-family: 'Helvetica Neue', sans-serif;
+    padding: 3rem 25rem;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.regresar-inicio {
+    padding-bottom: 5rem;
+}
+
+.regresar-inicio a {
+    text-decoration: none;
+    color: #EEE;
+}
+
+.regresar-inicio a, .proyecto ul a {
+    font-weight: 600;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+}
+
+.archivo h3 {
+    font-size: 1.8rem;
+    color: #FFF;
+    border-bottom: 4px solid #333;
+    padding: 0 1rem;
+}
+
 .proyecto ul a {
     color: #EEE;
     text-decoration: none;
-    font-weight: 600;
+}
+
+
+
+
+
+@media (max-width: 480px) {
+    .archivo-main {
+        padding: 2rem 2rem;
+    }
+
+    .regresar-inicio {
+        padding-bottom: 3rem;
+    }
 }
