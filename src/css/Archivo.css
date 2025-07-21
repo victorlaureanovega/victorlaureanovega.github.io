@@ -20,7 +20,7 @@
     font-weight: 600;
 }
 
-section {
+.archivo section {
     margin-bottom: 2rem;
     padding-bottom: 2rem;
 }
@@ -41,9 +41,16 @@ section {
 
 
 
+@media (max-width: 768px) {
+    .archivo-main {
+        padding: 5rem;
+        margin: 0 auto;
+    }
+}
+
 @media (max-width: 480px) {
     .archivo-main {
-        padding: 2rem 2rem;
+        padding: 2rem;
     }
 
     .regresar-inicio {
