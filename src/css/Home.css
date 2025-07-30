@@ -1,13 +1,4 @@
 /*---GENERALES---*/
-.inicio-main {
-  background-color: #111;
-  color: #EEE;
-  font-family: 'Helvetica Neue', sans-serif;
-  padding: 3rem 1.5rem;
-  margin: 0 auto;
-  line-height: 1.6;
-}
-
 #destacado, #archivo, #blog {
   margin-bottom: 4rem;
   padding-bottom: 4rem;
@@ -22,8 +13,16 @@
   flex-direction: column;
   align-items: center;
 }
+/*-----*/
 
-
+.inicio-main {
+  background-color: #111;
+  color: #EEE;
+  font-family: 'Helvetica Neue', sans-serif;
+  padding: 3rem 1.5rem;
+  margin: 0 auto;
+  line-height: 1.6;
+}
 
 /*---DESTACADO---*/
 #destacado h3 {
@@ -58,7 +57,7 @@ iframe {
 
 
 
-/*---ARCHIVO---*/
+/*---ARCHIVO Y BLOG---*/
 .texto {
   position: absolute;
   left: 50%;
@@ -97,25 +96,17 @@ iframe {
   opacity: 1;
 }
 
-
-
-/*---BLOG---*/
-button {
-  background-color: #222;
-  color: #E0E0E0;
-  padding: 1.5rem 2rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  border-radius: 4px;
-  font-size: 18px;
-  font-weight: 600;
+#blog .texto {
+  bottom: 110px;
 }
 
-button:hover {
-  background-color: #333;
-  color: #FFF;
+#blog img {
+  filter: brightness(50%);
 }
 
+#blog img:hover {
+  filter: brightness(30%);
+}
 
 
 

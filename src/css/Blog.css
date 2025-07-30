@@ -1,0 +1,58 @@
+/*-----GENERALES-----*/
+.regresar-inicio a, #contenedor-blog h1 {
+    color: #EEE;
+}
+/*-----*/
+
+body {
+    background-color: #111;
+}
+
+.regresar-inicio {
+    padding-top: 3rem;
+}
+
+.regresar-inicio a {
+    text-decoration: none;
+}
+
+.blog-main {
+    padding: 1.5rem 10rem;
+}
+
+#tablero {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#contenedor-blog h1 {
+    margin-bottom: 4.5rem;
+    font-size: 2rem;
+    border-bottom: 1px solid #333;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .blog-main {
+        padding: 1rem 3.5rem;
+    }
+}
+
+@media(max-width: 480px) {
+    .regresar-inicio {
+        padding-top: 2rem;
+    }
+
+    .blog-main {
+        padding: 1rem 2rem;
+    }
+
+    #contenedor-blog h1 {
+        margin-bottom: 3rem;
+        font-size: 1.5rem;
+    }
+}

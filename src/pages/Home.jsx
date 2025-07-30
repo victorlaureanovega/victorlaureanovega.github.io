@@ -10,8 +10,8 @@ function Home() {
                 <h3>Cortometraje de <span>Péndulo a media oscuridad</span></h3>
                 <div className="contenedor-corto">
                     <iframe
-                        title="corto"
-                        class="corto"
+                        title="Cortometraje de Péndulo a media oscuridad"
+                        className="corto"
                         src="https://www.youtube.com/embed/z6mUjEQjh_g" 
                         allowfullscreen>
                     </iframe>
@@ -19,19 +19,20 @@ function Home() {
             </section>
 
             <section id="archivo">
-                <div className="contenedor-archivo">
+                <div className="contenedor-pagina">
                     <div className="boton-contenido" onClick={() => navigate("/archivo")}>
-                        <img src="Nocturno.png" alt="Nocturno" />
+                        <img src="Nocturno.png" alt="Archivo" />
                         <span className="texto">{"Archivo"}</span>
                     </div>
                 </div>
             </section>
 
             <section id="blog">
-                <div className="contenedor-blog">
-                    <button className="boton-contenido" onClick={() => window.open("https://obiceyantonomasia.blogspot.com", '_blank')}>
-                        Óbice y antonomasia
-                    </button>
+                <div className="contenedor-pagina">
+                    <div className="boton-contenido" onClick={() => navigate("/obice-y-antonomasia")}>
+                        <img src="Retrato.png" alt="Blog" />
+                        <span className="texto">{"Blog"}</span>
+                    </div>
                 </div>
             </section>
         </main>
