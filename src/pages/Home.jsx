@@ -25,7 +25,7 @@ function Home() {
                 </section>
 
                 <section id="blog">
-                    <button onClick={() => window.open("/obice-y-antonomasia", "_blank")}>Óbice y antonomasia</button>
+                    <button onClick={() => window.open("./obice-y-antonomasia", "_blank")}>Óbice y antonomasia</button>
                 </section>
             </div>
 
