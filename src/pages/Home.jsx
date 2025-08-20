@@ -21,11 +21,11 @@ function Home() {
 
             <div className="contenedor-archivo-blog">
                 <section id="archivo">
-                    <button onClick={() => navigate("archivo")}>Archivo</button>
+                    <button onClick={() => navigate("/archivo")}>Archivo</button>
                 </section>
 
                 <section id="blog">
-                    <button onClick={() => navigate("obice-y-antonomasia")}>Óbice y antonomasia</button>
+                    <button onClick={() => navigate("/obice-y-antonomasia")}>Óbice y antonomasia</button>
                 </section>
             </div>
 

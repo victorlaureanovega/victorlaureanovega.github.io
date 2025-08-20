@@ -7,7 +7,7 @@ function CartaAustriaca() {
     return (
         <main className="entrada-main">
             <div className="regresar-blog">
-                <p onClick={() => navigate('obice-y-antonomasia')}>Ir al blog</p>
+                <p onClick={() => navigate('/obice-y-antonomasia')}>Ir al blog</p>
             </div>
             <div className="contenedor-texto">
                 <h1>Carta a una austriaca</h1>
