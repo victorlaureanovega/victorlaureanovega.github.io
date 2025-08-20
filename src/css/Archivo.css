@@ -1,59 +1,87 @@
 .archivo-main {
-    background-color: #111;
-    color: #EEE;
-    font-family: 'Helvetica Neue', sans-serif;
-    padding: 3rem 25rem;
-    margin: 0 auto;
-    line-height: 1.6;
+    color: #333;
+    font-family: sans-serif;
+    padding: 4rem 20rem;
+    margin: 0;
+    background: #D5D5D5;
 }
 
-.regresar-inicio {
+.archivo-main .regresar-inicio {
     padding-bottom: 5rem;
 }
 
-.regresar-inicio a {
+.archivo-main .regresar-inicio a {
     text-decoration: none;
-    color: #EEE;
+    color: #111;
 }
 
 .regresar-inicio a, .proyecto ul a {
     font-weight: 600;
 }
 
+.archivo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  gap: 2rem;
+}
+
 .archivo section {
-    margin-bottom: 2rem;
-    padding-bottom: 2rem;
+  background: #FFF;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
 .archivo h3 {
-    font-size: 1.8rem;
-    color: #FFF;
-    border-bottom: 4px solid #333;
-    padding: 0 1rem;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #333;
+    padding-top: 0.5rem;
+    margin-top: 0;
+}
+
+.texto-enlace {
+    cursor: pointer;
+}
+
+.proyecto ul {
+    padding-left: 1rem;
 }
 
 .proyecto ul a {
-    color: #EEE;
+    color: #111;
     text-decoration: none;
+}
+
+.proyecto ul a:hover {
+    text-decoration: underline;
 }
 
 
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
     .archivo-main {
-        padding: 5rem;
-        margin: 0 auto;
+        padding: 4rem 7rem 7rem 7rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .archivo-main {
+        padding: 3rem;
+    }
+
+    .archivo {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     }
 }
 
 @media (max-width: 480px) {
     .archivo-main {
-        padding: 2rem;
+        padding: 3rem 1.5rem;
     }
 
-    .regresar-inicio {
-        padding-bottom: 3rem;
+    .archivo {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 }

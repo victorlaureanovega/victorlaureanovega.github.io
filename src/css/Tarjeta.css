@@ -1,14 +1,13 @@
-/*-----GENERALES-----*/
 .contenedor-tarjeta h3, .contenedor-tarjeta p {
   color: #EEE;
 }
-/*-----*/
 
 .tarjeta {
   padding: 1.5rem 2.5rem;
   border-radius: 8px;
   background-color: #222;
   cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
 .tarjeta:hover {
@@ -40,7 +39,7 @@
 
 @media(max-width: 480px) {
   .tarjeta {
-    padding: 1.5rem 2rem;
+    padding: 1rem 1.5rem;
   }
 
   .contenedor-tarjeta h3 {
