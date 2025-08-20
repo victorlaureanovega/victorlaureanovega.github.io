@@ -31,6 +31,10 @@
     color: #EEE;
 }
 
+.regresar-blog p {
+    cursor: pointer;
+}
+
 .contenedor-texto {
     background-color: #EAEAEA;
     padding: 4rem;
