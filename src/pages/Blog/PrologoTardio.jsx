@@ -1,10 +1,13 @@
+import { useNavigate } from "react-router-dom";
 import "../../css/Entrada.css";
 
 function PrologoTardio() {
+    const navigate = useNavigate();
+
     return(
         <main className="entrada-main">
             <div className="regresar-blog">
-                <a href="obice-y-antonomasia">Ir al blog</a>
+                <p onClick={() => navigate('obice-y-antonomasia')}>Ir al blog</p>
             </div>
             <div className="contenedor-texto">
                 <h1>Un prólogo tardío</h1>
