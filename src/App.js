@@ -13,10 +13,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/archivo" element={<Archivo />} />
-        <Route path="/obice-y-antonomasia" element={<Blog />} />
-        <Route path="/carta-a-una-austriaca" element={<CartaAustriaca />} />
-        <Route path="/pendulo-a-media-oscuridad" element={<Pendulo />} />
-        <Route path="/un-prologo-tardio" element={<PrologoTardio />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/carta-a-una-austriaca" element={<CartaAustriaca />} />
+        <Route path="/blog/pendulo-a-media-oscuridad" element={<Pendulo />} />
+        <Route path="/blog/un-prologo-tardio" element={<PrologoTardio />} />
       </Routes>
     </Router>
   );

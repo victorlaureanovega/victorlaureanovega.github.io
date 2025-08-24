@@ -9,9 +9,9 @@ function Blog() {
                     <h1>Óbice y antonomasia</h1>
                 </div>
                 <div className="tablero">
-                    <Tarjeta titulo="Un prólogo tardío" enlace="un-prologo-tardio" fecha="19/08/2025"/>
-                    <Tarjeta titulo="Péndulo a media oscuridad" enlace="pendulo-a-media-oscuridad" fecha="18/01/2025"/>
-                    <Tarjeta titulo="Carta a una austriaca" enlace="carta-a-una-austriaca" fecha="04/10/2024"/>
+                    <Tarjeta titulo="Un prólogo tardío" enlace="blog/un-prologo-tardio" fecha="19/08/2025"/>
+                    <Tarjeta titulo="Péndulo a media oscuridad" enlace="blog/pendulo-a-media-oscuridad" fecha="18/01/2025"/>
+                    <Tarjeta titulo="Carta a una austriaca" enlace="blog/carta-a-una-austriaca" fecha="04/10/2024"/>
                 </div>
             </section>
         </main>

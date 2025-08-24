@@ -7,7 +7,7 @@ function PrologoTardio() {
     return(
         <main className="entrada-main">
             <div className="regresar-blog">
-                <p onClick={() => navigate('/obice-y-antonomasia')}>Ir al blog</p>
+                <p onClick={() => navigate('/blog')}>Ir al blog</p>
             </div>
             <div className="contenedor-texto">
                 <h1>Un prólogo tardío</h1>
